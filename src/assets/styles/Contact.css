@@ -1,0 +1,27 @@
+.contact-page {
+  background-color: #f0f0f0;
+  min-height: 90vh;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  background-color: #03031f;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #1a1a3b;
+}

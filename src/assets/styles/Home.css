@@ -1,0 +1,77 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  box-sizing: border-box;
+}
+
+.home-left {
+  flex: 1;
+  max-width: 600px;
+}
+
+.home-left h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.home-left p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #4b5563;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.home-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  background-color: #03031f;
+  color: white;
+}
+
+.home-btn:hover {
+  background-color: #4f46e5;
+}
+
+/* Optional right section for future enhancements */
+.home-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .home-left {
+    max-width: 100%;
+  }
+
+  .home-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .home-right {
+    margin-top: 2rem;
+  }
+}

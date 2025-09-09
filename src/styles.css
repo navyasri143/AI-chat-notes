@@ -1,0 +1,127 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Apply styles to the main container */
+  .container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-color: #f2f6f2ce;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Input fields */
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Note Card */
+  .note {
+    background-color: #f9f9f9;
+    border-left: 5px solid #4CAF50;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+
+  /* Note Container */
+.note-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Note Heading */
+  .note-heading {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Note List */
+  .note-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Note Item */
+  .note-item {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Note Title */
+  .note-title {
+    font-size: 18px;
+    color: #444;
+  }
+  
+  /* Note Content */
+  .original {
+    color: #666;
+  }
+  
+  .summary {
+    color: #008000;
+    font-weight: bold;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .delete-btn:hover {
+    background: #cc0000;
+  }
+  
+  

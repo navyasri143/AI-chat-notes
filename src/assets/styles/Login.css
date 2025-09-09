@@ -1,0 +1,148 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto; /* prevents scrolling */
+}
+
+.login-container {
+  display: flex;
+  height: calc(100vh - 80px); /* subtract navbar height if needed */
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 1rem 12rem; /* reduce top/bottom padding */
+  margin-top: 1rem; /* reduce from previous value */
+}
+
+.login-left {
+  flex: 1;
+  max-width: 460px;
+  padding: 1rem; /* reduced padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  background-color: #fff;
+  padding: 1.2rem 1.5rem; /* reduced padding */
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  border: 1.5px solid #03031f;
+}
+.login-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.login-subtitle {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.login-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.login-group label {
+  font-weight: 500;
+}
+
+.login-group input {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 2px solid #03031f;
+  outline: none;
+}
+
+.login-form button {
+  background-color: #03031f;
+  color: white;
+  border: none;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.login-form button:hover {
+  background-color: #1a1a35;
+  transform: translateY(-2px);
+}
+
+.login-link {
+  font-size: 0.9rem;
+  color: #03031f;
+  text-decoration: underline;
+  margin-top: 0.5rem;
+}
+
+.login-divider {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.login-socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.login-social-btn {
+  flex: 1;
+  background-color: transparent;
+  border: 2px solid #03031f;
+  color: #03031f;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.login-social-btn:hover {
+  background-color: #03031f;
+  color: #fff;
+}
+
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-right img {
+  max-width: 90%;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column-reverse;
+  }
+
+  .login-right img {
+    max-width: 60%;
+  }
+
+  .login-left {
+    width: 100%;
+  }
+}
